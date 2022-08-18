@@ -1,0 +1,78 @@
+html, body {
+    background: #333;
+    color: #eee;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+}
+
+header {
+    background: #f02c00;
+    clip-path: polygon(0 0, 100% 0, 100% 66%, 0 100%);
+    padding: 1rem 0 1rem 5%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+h1 {
+    font-family: "Segoe UI Light";
+    font-size: 2.5em;
+    margin-top: 0;
+    grid-column: 1;
+}
+
+h2 {
+    font-size: 2em;
+    grid-column: 1;
+    text-align: center;
+}
+
+nav {
+    text-align: right;
+    line-height: 5rem;
+    grid-column: 2;
+    padding-right: 5%;
+}
+
+main {
+    max-width: 720px;
+    line-height: 1.5;
+    margin: 5rem auto;
+    font-size: 1.5em;
+}
+
+section.projects {
+    /* clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%); */
+    background-color: #fff;
+    padding: 1rem 0;
+    color: #222;
+}
+
+section.projects ul {
+    max-width: 720px;
+    margin: 0 auto;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    row-gap: 50px;
+}
+
+section.projects ul li {
+    width: 90%;
+}
+
+@media (min-device-width: 720px) {
+    section.projects ul li {
+        width: 350px;
+    }
+}
+
+footer {
+    color: #333;
+    max-width: 720px;
+    margin: 5rem auto;
+    text-align: center;
+}
