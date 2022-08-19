@@ -16,6 +16,11 @@ ul {
     padding-left: 0;
 }
 
+ul.list {
+    padding-left: 40px;
+    list-style: circle;
+}
+
 a,
 a:active,
 a:visited {
@@ -77,13 +82,15 @@ section.project {
     font-size: 1rem;
 } 
 
-section.project div {
-    font-family: 'Consolas', monospace
-}
 
 section.project a {
     color: var(--white);
     text-decoration: underline;
+}
+
+section.project .info {
+    margin-bottom: 20px;
+    font-family: 'Consolas', monospace
 }
 
 section.projects {
