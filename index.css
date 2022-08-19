@@ -90,13 +90,13 @@ section.projects {
     background-color: var(--white);
     padding: 1rem 0;
     color: var(--dark);
+    display: b;
 }
 
 section.projects ul {
     max-width: 720px;
     margin: 0 auto;
     list-style: none;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -111,10 +111,14 @@ section.projects ul li {
     margin: auto 0;
 }
 
+section.projects ul li img {
+    max-height: 200px;
+    max-width: 320px;
+}
+
 @media (min-device-width: 720px) {
     section.projects ul li {
         width: 350px;
-        max-height: 176px;
     }
 }
 
